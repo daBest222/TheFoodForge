@@ -1,0 +1,29 @@
+{
+    "recipes":
+    [
+        {
+            "name": "Chocolate chip cookies",
+            "description": "Delicious chocolate chip cookies that are easy to make.",
+            "category": "Dessert",
+            "time": "30 minutes",
+            "ingredients":
+            [
+                "1 egg",
+                "1 1/4 cups of flour",
+                "1 1/2 cups of brown sugar",
+                "125g of butter",
+                "250g of chocolate chips"
+            ],
+            "instructions":
+            [
+                "Preheat the oven to 180°C.",
+                "In a bowl, mix the butter and sugar until creamy.",
+                "Add the egg and mix well.",
+                "Gradually add the flour and chocolate chips.",
+                "Form small balls and place them on a baking tray.",
+                "Bake for 10-12 minutes or until golden brown."
+            ],
+            "image": "images/....png"
+        }
+    ]
+}
