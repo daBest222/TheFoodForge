@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Master Baker</h1>
-        <h2>Where Bakers become masters at baking.</h2>
+        <h2>Where bakers become masters at baking.</h2>
     </header>
     <main>
         <div class="recipeBox" id="recipeBoxTemplate" style="display: none;">
@@ -20,30 +20,15 @@
             <div class="recipeInformation">
                 <h3 class="recipeName">Chocolate Chip Cookies</h3>
                 <p class="recipeDescription">These classic chocolate chip cookies are soft, chewy, and loaded with rich chocolate chips. Perfect for any occasion, they’re easy to make and guaranteed to satisfy your sweet tooth!</p>
-                <div class="recipeStats">
-                    <div class="singleLine">
-                        <p class="recipeTime">⏰ </p>
-                        <p class="recipeCategory">🗂️ </p>
-                    </div>
-                </div>
-                <div class="recipeUserOpinions">
-                    <div class="singleLine">
-                        <div class="recipeLikes">👍 0</div>
-                        <div class="recipeDislikes">👎 0</div>
-                        <div class="recipeCommentsCount">💬 0</div>
-                    </div>
-                    <div class="spacerMedium"></div>
-                    <div class="singleLine">
-                        <div class="recipeAverageRating" id="stars"></div>
-                        <div class="recipeRatingCount">📊 0</div>
-                    </div>
+                <div class="recipeStats, spacedContent">
+                    <p class="recipeTime">⏰ 00 mins</p>
+                    <p class="recipeCategory">🗂️ Dessert</p>
                 </div>
             </div>
             <div class="spacerMedium"></div>
-            <div class="recipeActions, singleLine">
+            <div class="recipeActions, spacedContent">
                 <button class="recipeButton, button" id="recipeViewButton">👁️ View Recipe</button>
-                <button class="recipeButton, button" id="recipeLikeButton">👍Like</button>
-                <button class="recipeButton, button" id="recipeDislikeButton">👎Dislike</button>
+                <button class="recipeButton, button" id="recipeFavouriteButton">❤️ Add to favourites</button>
             </div>
         </div>
         <div id="recipeContainer"></div>
