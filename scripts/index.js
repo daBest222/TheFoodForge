@@ -1,5 +1,3 @@
-var data = null;
-
 function displayRecipes(recipes)
 {
     const recipeBoxTemplate = document.getElementById("recipeBoxTemplate");
@@ -18,20 +16,14 @@ function displayRecipes(recipes)
         recipeBox.getElementsByClassName("recipeTime")[0].innerHTML += recipe.time
         recipeBox.getElementsByClassName("recipeCategory")[0].innerHTML += recipe.category;
 
+        var favouriteButton = recipeBox.getElementsByClassName("favouriteButton")[0];
+        favouriteButton.id = recipe.id;
+        setFavouriteButton(favouriteButton, recipe.id);
+
         recipeBox.style.display = "block";
 
         recipeContainer.appendChild(recipeBox);
     }
 }
 
-function loadData()
-{
-    fetch("data/data.json")
-      .then(response => response.json())
-      .then(data => {
-        data = data;
-      });
-}
-
-loadData();
 displayRecipes(data.recipes);
