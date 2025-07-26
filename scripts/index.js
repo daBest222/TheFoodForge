@@ -1,3 +1,5 @@
+var data = null;
+
 function displayRecipes(recipes)
 {
     const recipeBoxTemplate = document.getElementById("recipeBoxTemplate");
@@ -21,3 +23,14 @@ function displayRecipes(recipes)
         recipeContainer.appendChild(recipeBox);
     }
 }
+
+function loadData()
+{
+    fetch("data/data.json")
+      .then(response => response.json())
+      .then(data => {
+        data = data;
+      });
+}
+
+displayRecipes(data.recipes);
