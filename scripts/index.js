@@ -33,4 +33,5 @@ function loadData()
       });
 }
 
+loadData();
 displayRecipes(data.recipes);
