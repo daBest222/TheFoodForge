@@ -38,18 +38,24 @@ function setFavourite(recipeId, isFavourite)
 
 function setFavouriteButtonState(favouriteButton, isFavourite)
 {
-    if (isFavourite) {
+    if (isFavourite)
+    {
         favouriteButton.innerHTML = "❤️ Remove from favourites";
-    } else {
+    }
+    else
+    {
         favouriteButton.innerHTML = "🤍 Add to favourites";
     }
 }
 
 function setFavouriteButton(favouriteButton, recipeId)
 {
-    if (favouriteRecipes[recipeId]) {
+    if (favouriteRecipes[recipeId])
+    {
         setFavouriteButtonState(favouriteButton, true);
-    } else {
+    }
+    else
+    {
         setFavouriteButtonState(favouriteButton, false);
     }
 }
