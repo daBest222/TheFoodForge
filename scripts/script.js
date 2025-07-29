@@ -43,15 +43,13 @@ function setFavouriteButton(favouriteButton, recipeId)
     }
 }
 
-function loadData()
+async function loadData()
 {
-    fetch("data/data.json")
-      .then(response => response.json())
-      .then(data => {
-        data = data;
-      });
+    const response = await fetch("data/data.json");
+    data = await response.json();
 }
 
-loadData();
-console.log(data);
-loadFavourite();
+loadData().then(() => {
+    console.log(data);
+    loadFavourite();
+});
