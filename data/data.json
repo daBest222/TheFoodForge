@@ -1,9 +1,10 @@
 {
     "recipes":
-    [
+    {
+        "id_1":
         {
             "name": "Chocolate chip cookies",
-            "id": "001",
+            "id": "1",
             "description": "Delicious chocolate chip cookies that are easy to make.",
             "category": "Dessert",
             "time": "30 minutes",
@@ -26,5 +27,5 @@
             ],
             "image": "images/....png"
         }
-    ]
+    }
 }
