@@ -7,7 +7,7 @@ function displayRecipes(recipes)
     recipeContainer.innerHTML = "";
 
     console.log(recipes);
-    for (var recipe of recipes)
+    for (var recipe in recipes)
     {
         var recipeBox = recipeBoxTemplate.cloneNode(true);
         recipeBox.getElementsByClassName("recipeImage")[0].src = recipe.image;
