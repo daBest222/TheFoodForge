@@ -1,5 +1,5 @@
 var data = {};
-var favouriteRecipes = [];
+var favouriteRecipes = {};
 
 function toggleFavourite(favouriteButton)
 {
@@ -16,7 +16,18 @@ function toggleFavourite(favouriteButton)
 
 function loadFavourite()
 {
-    favouriteRecipes = JSON.parse(localStorage.getItem("favouriteRecipes"));
+    if (localStorage.getItem("favouriteRecipes") === null)
+    {
+        for (var recipe of data.recipes)
+        {
+            favouriteRecipes[recipe.id] = false;
+        }
+        localStorage.setItem("favouriteRecipes", JSON.stringify(favouriteRecipes));
+    }
+    else
+    {
+        favouriteRecipes = JSON.parse(localStorage.getItem("favouriteRecipes"));
+    }
 }
 
 function setFavourite(recipeId, isFavourite)
