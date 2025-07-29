@@ -6,7 +6,7 @@ function displayRecipes(recipes)
     const recipeContainer = document.getElementById("recipeContainer");
     recipeContainer.innerHTML = "";
 
-
+    console.log(recipes);
     for (var recipe of recipes)
     {
         var recipeBox = recipeBoxTemplate.cloneNode(true);

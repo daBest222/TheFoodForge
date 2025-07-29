@@ -53,4 +53,5 @@ function loadData()
 }
 
 loadData();
+console.log(data);
 loadFavourite();
