@@ -44,7 +44,7 @@ function setFavouriteButtonState(favouriteButton, isFavourite)
     }
     else
     {
-        favouriteButton.innerHTML = "🤍 Add to favourites";
+        favouriteButton.innerHTML = "❤️ Add to favourites";
     }
 }
 
