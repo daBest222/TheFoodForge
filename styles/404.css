@@ -1,0 +1,18 @@
+body
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    color: #457bd1;
+    text-shadow: 1px 1px #b1b8c2;
+}
+
+#errorIcon
+{
+    max-width: 90%;
+    max-height: 50%;
+}

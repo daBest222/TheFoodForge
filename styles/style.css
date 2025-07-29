@@ -73,10 +73,9 @@ footer
     cursor: pointer;
 }
 
-.icon
+.button:hover
 {
-    width: 20px;
-    height: 20px;
+    background-color: #365fa0;
 }
 
 .spacedContent
