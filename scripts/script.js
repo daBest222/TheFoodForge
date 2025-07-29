@@ -1,4 +1,4 @@
-var data = null;
+var data = {};
 var favouriteRecipes = [];
 
 function toggleFavourite(favouriteButton)
@@ -51,3 +51,6 @@ function loadData()
         data = data;
       });
 }
+
+loadData();
+loadFavourite();
