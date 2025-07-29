@@ -17,8 +17,7 @@ function displayRecipes(recipes)
 
         var favouriteButton = recipeBox.getElementsByClassName("favouriteButton")[0];
         favouriteButton.id = recipe.id;
-        console.log(favouriteButton)
-        //setFavouriteButton(favouriteButton, recipe.id);
+        setFavouriteButton(favouriteButton, recipe.id);
 
         recipeBox.style.display = "block";
 
