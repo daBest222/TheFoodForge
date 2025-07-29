@@ -50,6 +50,10 @@ async function loadData()
 }
 
 loadData().then(() => {
-    console.log(data);
     loadFavourite();
+
+    if (window.location.pathname.endsWith("/TheFoodForge/"))
+    {
+        displayRecipes(data.recipes);
+    }
 });

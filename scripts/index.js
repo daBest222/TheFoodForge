@@ -6,7 +6,6 @@ function displayRecipes(recipes)
     const recipeContainer = document.getElementById("recipeContainer");
     recipeContainer.innerHTML = "";
 
-    console.log(recipes);
     for (var recipe in recipes)
     {
         var recipeBox = recipeBoxTemplate.cloneNode(true);
@@ -25,5 +24,3 @@ function displayRecipes(recipes)
         recipeContainer.appendChild(recipeBox);
     }
 }
-
-displayRecipes(data.recipes);
