@@ -55,5 +55,8 @@ loadData().then(() => {
     if (window.location.pathname.endsWith("/TheFoodForge/"))
     {
         displayRecipes(data.recipes);
+
+        const randomIndex = Math.floor(Math.random() * data.tagline.length);
+        document.getElementById("tagline").innerHTML = data.tagline[randomIndex];
     }
 });
