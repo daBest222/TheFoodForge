@@ -51,3 +51,5 @@ function loadData()
         data = data;
       });
 }
+
+loadData();
