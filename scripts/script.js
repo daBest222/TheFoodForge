@@ -74,7 +74,7 @@ loadData().then(() => {
     {
         displayRecipes(data.recipes);
 
-        const randomIndex = Math.floor(Math.random() * data.tagline.length);
-        document.getElementById("tagline").innerHTML = data.tagline[randomIndex];
+        const randomIndex = Math.floor(Math.random() * data.taglines.length);
+        document.getElementById("tagline").innerHTML = data.tagliness[randomIndex];
     }
 });
