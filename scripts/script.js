@@ -73,7 +73,26 @@ loadData().then(() => {
     {
         displayRecipes(data.recipes);
 
-        const randomIndex = Math.floor(Math.random() * data.taglines.length);
+        var randomIndex = Math.floor(Math.random() * data.taglines.length);
         document.getElementById("tagline").innerHTML = data.tagliness[randomIndex];
     }
+    else if (window.location.pathname.endsWith("/TheFoodForge/recipe.html"))
+    {
+        var urlParams = new URLSearchParams(window.location.search);
+        var recipeId = urlParams.get("id");
+        var recipe = findRecipeById(recipeId);
+
+        if (recipe)
+        {
+            displayRecipe(recipe);
+        }
+        else
+        {
+            window.location.href = "404.html";
+        }
+    }
 });
+
+function findRecipeById(id) {
+    return data.recipes.find(recipe => recipe.id === id);
+}

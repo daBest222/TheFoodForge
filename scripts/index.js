@@ -19,6 +19,8 @@ function displayRecipes(recipes)
         favouriteButton.id = recipe.id;
         setFavouriteButton(favouriteButton, recipe.id);
 
+        recipeBox.getElementsByClassName("viewRecipeButton")[0].href = "recipe.html?id=" + recipe.id;
+
         recipeBox.style.display = "block";
 
         recipeContainer.appendChild(recipeBox);
