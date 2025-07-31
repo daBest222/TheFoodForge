@@ -74,7 +74,7 @@ loadData().then(() => {
         displayRecipes(data.recipes);
 
         var randomIndex = Math.floor(Math.random() * data.taglines.length);
-        document.getElementById("tagline").innerHTML = data.tagliness[randomIndex];
+        document.getElementById("tagline").innerHTML = data.taglines[randomIndex];
     }
     else if (window.location.pathname.endsWith("/TheFoodForge/recipe.html"))
     {
