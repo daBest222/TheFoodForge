@@ -64,7 +64,6 @@ async function loadData()
 {
     const response = await fetch("data/data.json");
     data = await response.json();
-    console.log(data);
 }
 
 loadData().then(() => {
