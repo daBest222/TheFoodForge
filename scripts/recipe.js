@@ -16,7 +16,7 @@ function displayRecipe(recipe)
     favouriteButton.id = recipe.id;
     setFavouriteButton(favouriteButton, recipe.id);
 
-    ingredientsList = document.getElementById("ingredientsList");
+    ingredientsList = document.getElementById("ingredientList");
     ingredientsList.innerHTML = "";
     recipe.ingredients.forEach(ingredient => 
     {
@@ -25,7 +25,7 @@ function displayRecipe(recipe)
         ingredientsList.appendChild(li);
     });
 
-    var instructionsList = document.getElementById("instructionsList");
+    var instructionsList = document.getElementById("instructionList");
     instructionsList.innerHTML = "";
     recipe.instructions.forEach(instruction => 
     {

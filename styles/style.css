@@ -37,9 +37,9 @@ main
 }
 
 @media (max-width: 500px) {
-    main {
-        width: 95%;
-        margin-left: 2.5%;
+    main
+{
+        width: 100%;
     }
 }
 

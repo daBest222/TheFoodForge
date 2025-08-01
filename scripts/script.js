@@ -55,11 +55,11 @@ function setFavouriteButtonState(favouriteButton, isFavourite)
 {
     if (isFavourite)
     {
-        favouriteButton.innerHTML = "❤️ Remove from favourites";
+        favouriteButton.innerHTML = "❤️ Unfavourite";
     }
     else
     {
-        favouriteButton.innerHTML = "❤️ Add to favourites";
+        favouriteButton.innerHTML = "❤️ Favourite";
     }
 }
 
