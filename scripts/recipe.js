@@ -1,7 +1,10 @@
 var wakeLock = null;
+var cookingMode = false;
 
 function displayRecipe(recipe)
 {
+    document.title = recipe.name + " - The Food Forge";
+
     Array.from(document.getElementsByClassName("recipeName")).forEach(element => 
     {
         element.innerHTML = recipe.name;
@@ -37,22 +40,16 @@ function displayRecipe(recipe)
 
 function enableCookingMode()
 {
-    if ("wakeLock" in navigator)
+    navigator.wakeLock.request("screen").then(lock => 
     {
-        navigator.wakeLock.request("screen")
-            .then(lock => 
-            {
-                wakeLock = lock;
-            })
-            .catch(err => 
-            {
-                console.error("Wake Lock error:", err);
-            });
-    }
-    else
+        wakeLock = lock;
+        cookingMode = true;
+        toggleCookingModeButton();
+    }).catch(err => 
     {
-        alert("Cooking mode is not supported on this device/browser.");
-    }
+        console.error("Wake Lock error:", err);
+        alert("Failed to enable cooking mode. Please try again later.");
+    });
 }
 
 function disableCookingMode()
@@ -61,12 +58,14 @@ function disableCookingMode()
     {
         wakeLock.release();
         wakeLock = null;
+        cookingMode = false;
+        toggleCookingModeButton();
     }
 }
 
-function toggleCookingMode(isEnabled)
+function toggleCookingMode()
 {
-    if (isEnabled)
+    if (cookingMode)
     {
         enableCookingMode();
     }
@@ -74,4 +73,22 @@ function toggleCookingMode(isEnabled)
     {
         disableCookingMode();
     }
+}
+
+function toggleCookingModeButton()
+{
+    var cookingModeTogglerImage = document.getElementById("cookingModeButton").innerHTML.getElementById("cookingModeTogglerImage");
+    if (cookingMode)
+    {
+        cookingModeTogglerImage.src = "images/toggle_on.png";
+    }
+    else
+    {
+        cookingModeTogglerImage.src = "images/toggle_off.png";
+    }
+}
+
+if (!("wakeLock" in navigator))
+{
+    document.getElementById("cookingModeButton").style.display = "none";
 }
