@@ -10,11 +10,31 @@
 </head>
 <body>
     <header>
-        <h1 id="recipeName"></h1>
-        <h2 id="recipeDescription"></h2>
+        <h1 class="recipeName"></h1>
+        <h2>The Food Forge</h2>
     </header>
     <main>
-
+        <div id="recipeImageBox">
+            <img id="recipeImage" alt="Recipe Image">
+        </div>
+        <div id="recipeInformation">
+            <h3 class="recipeName"></h3>
+            <p id="recipeDescription"></p>
+            <div class="recipeStats, spacedContent">
+                <p id="recipeTime">⏰ </p>
+                <p id="recipeCategory">🗂️ </p>
+            </div>
+        </div>
+        <div class="spacerMedium"></div>
+        <div class="recipeActions, spacedContent">
+            <button class="recipeButton" id="homeButton" onclick="location.href='/TheFoodForge/'"><img src="images/icon.png" class="imageEmoji"> Home</button>
+            <button class="recipeButton" id="favouriteButton" onclick="toggleFavourite(this)">❤️ Add to favourites</button>
+        </div>
+        <div class="spacerMedium"></div>
+        <div id="ingredients">
+            <h3>Ingredients</h3>
+            <ul id="ingredientList"></ul>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 The Food Forge. All rights reserved.</p>
