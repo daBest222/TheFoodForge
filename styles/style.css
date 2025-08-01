@@ -36,6 +36,13 @@ main
     margin-bottom: 5px;
 }
 
+@media (max-width: 500px) {
+    main {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
 footer
 {
     text-align: center;
