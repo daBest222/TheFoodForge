@@ -77,8 +77,30 @@ function setFavouriteButton(favouriteButton, recipeId)
 
 async function loadData()
 {
-    const response = await fetch("data/data.json");
-    data = await response.json();
+    var loaded = false;
+    var attemptsLeft = 5;
+
+    while (!loaded)
+    {
+        try
+        {
+            const response = await fetch("data/data.json");
+            data = await response.json();
+            loaded = true;
+        }
+        catch (error)
+        {
+            console.error("Error loading data:", error);
+            attemptsLeft--;
+
+            if (attemptsLeft === 0)
+            {
+                console.error("Failed to load data after multiple attempts.");
+                alert("Failed to load data. Please try again later or press 'OK' to reload the page.");
+                window.location.reload();
+            }
+        }
+    }
 }
 
 loadData().then(() => {
