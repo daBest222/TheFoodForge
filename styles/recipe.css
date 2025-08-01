@@ -6,3 +6,9 @@
     color: #457bd1;
     text-shadow: 1px 1px #b1b8c2;
 }
+
+.recipeButton
+{
+    min-width: 40%;
+    min-height: 40px;
+}

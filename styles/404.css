@@ -16,3 +16,9 @@ h1
     max-width: 90%;
     max-height: 300px;
 }
+
+button
+{
+    width: 100px;
+    height: 40px;
+}

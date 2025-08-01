@@ -71,8 +71,6 @@ button
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    min-height: 20px;
-    min-width: 100px;
 }
 
 button:hover

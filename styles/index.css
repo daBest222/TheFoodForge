@@ -23,3 +23,9 @@
 {
     padding: 10px;
 }
+
+.recipeButton
+{
+    min-width: 40%;
+    min-height: 40px;
+}
