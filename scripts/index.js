@@ -1,5 +1,6 @@
 function displayRecipes(recipes)
 {
+    console.log("Displaying recipes:", recipes);
     const recipeBoxTemplate = document.getElementById("recipeBoxTemplate");
     recipeBoxTemplate.removeAttribute("id");
 
