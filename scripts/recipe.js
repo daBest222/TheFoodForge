@@ -1,3 +1,5 @@
+var wakeLock = null;
+
 function displayRecipe(recipe)
 {
     Array.from(document.getElementsByClassName("recipeName")).forEach(element => 
@@ -31,4 +33,45 @@ function displayRecipe(recipe)
         li.innerHTML = instruction;
         instructionsList.appendChild(li);
     });
+}
+
+function enableCookingMode()
+{
+    if ("wakeLock" in navigator)
+    {
+        navigator.wakeLock.request("screen")
+            .then(lock => 
+            {
+                wakeLock = lock;
+            })
+            .catch(err => 
+            {
+                console.error("Wake Lock error:", err);
+            });
+    }
+    else
+    {
+        alert("Cooking mode is not supported on this device/browser.");
+    }
+}
+
+function disableCookingMode()
+{
+    if (wakeLock)
+    {
+        wakeLock.release();
+        wakeLock = null;
+    }
+}
+
+function toggleCookingMode(isEnabled)
+{
+    if (isEnabled)
+    {
+        enableCookingMode();
+    }
+    else
+    {
+        disableCookingMode();
+    }
 }
