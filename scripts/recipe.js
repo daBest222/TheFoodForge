@@ -1,6 +1,6 @@
 function displayRecipe(recipe)
 {
-    document.getElementsByClassName("recipeName").array.forEach(element => 
+    document.getElementsByClassName("recipeName").forEach(element => 
     {
         element.innerHTML = recipe.name;
     });
