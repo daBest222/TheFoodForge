@@ -65,7 +65,7 @@ function disableCookingMode()
 
 function toggleCookingMode()
 {
-    if (cookingMode)
+    if (!(cookingMode))
     {
         enableCookingMode();
     }
@@ -77,14 +77,14 @@ function toggleCookingMode()
 
 function toggleCookingModeButton()
 {
-    var cookingModeTogglerImage = document.getElementById("cookingModeButton").innerHTML.getElementById("cookingModeTogglerImage");
+    var cookingModeTogglerImage = document.getElementById("cookingModeButton");
     if (cookingMode)
     {
-        cookingModeTogglerImage.src = "images/toggle_on.png";
+        cookingModeTogglerImage.innerHTML = "On";
     }
     else
     {
-        cookingModeTogglerImage.src = "images/toggle_off.png";
+        cookingModeTogglerImage.innerHTML = "Off";
     }
 }
 
