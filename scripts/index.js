@@ -7,7 +7,7 @@ function displayRecipes(recipes)
     const recipeContainer = document.getElementById("recipeContainer");
     recipeContainer.innerHTML = "";
 
-    for (var recipe in recipes)
+    recipes.array.forEach(recipe => 
     {
         var recipeBox = recipeBoxTemplate.cloneNode(true);
         recipeBox.getElementsByClassName("recipeImage")[0].src = recipe.image;
@@ -25,5 +25,5 @@ function displayRecipes(recipes)
         recipeBox.style.display = "block";
 
         recipeContainer.appendChild(recipeBox);
-    }
+    })
 }
