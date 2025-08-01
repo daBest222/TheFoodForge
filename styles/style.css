@@ -78,6 +78,8 @@ button
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    min-width: 40%;
+    min-height: 40px;
 }
 
 button:hover
