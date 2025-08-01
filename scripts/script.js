@@ -1,4 +1,17 @@
+console.warn(`
+⚠️ NOTICE: Recipes in this project are original content and are protected under the 
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License.
 
+You are STRICTLY NOT ALLOWED to:
+- Copy or reuse the recipes for commercial purposes.
+- Modify or redistribute them in any form.
+
+For more information, please read:
+- README: https://github.com/daBest222/TheFoodForge/blob/main/README.md
+- License: https://github.com/daBest222/TheFoodForge/blob/main/LICENSE
+
+Thank you for respecting the terms.
+`);
 
 var data = {};
 var favouriteRecipes = {};
