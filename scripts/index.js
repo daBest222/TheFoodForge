@@ -21,7 +21,7 @@ function displayRecipes(recipes)
 
         recipeBox.getElementsByClassName("viewRecipeButton")[0].onclick = () => 
         {
-            location.href = "recipe.html?id=" + recipe.id;
+            window.location.href = "recipe.html?id=" + recipe.id;
         };
 
         recipeBox.style.display = "block";
