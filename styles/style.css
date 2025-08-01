@@ -30,13 +30,13 @@ main
 {
     width: 50%;
     margin-left: 25%;
-    padding: 5px;
     align-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) 
+{
     main
     {
         width: 100%;
@@ -99,4 +99,13 @@ button:hover
 {
     max-width: 15px;
     max-height: 15px;
+}
+
+.box
+{
+    border: 2px solid #457bd1;
+    border-radius: 5px;
+    padding: 10px;
+    color: #457bd1;
+    text-shadow: 1px 1px #b1b8c2;
 }
