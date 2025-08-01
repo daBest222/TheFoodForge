@@ -1,9 +1,10 @@
 function displayRecipe(recipe)
 {
-    document.getElementsByClassName("recipeName").forEach(element => 
+    Array.from(document.getElementsByClassName("recipeName")).forEach(element => 
     {
         element.innerHTML = recipe.name;
     });
+    
     document.getElementById("recipeDescription").innerHTML = recipe.description;
     document.getElementById("recipeImage").src = recipe.image;
     document.getElementById("recipeTime").innerHTML += recipe.time;
