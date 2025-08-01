@@ -13,4 +13,22 @@ function displayRecipe(recipe)
     var favouriteButton = document.getElementsByClassName("favouriteButton")[0];
     favouriteButton.id = recipe.id;
     setFavouriteButton(favouriteButton, recipe.id);
+
+    ingredientsList = document.getElementById("ingredientsList");
+    ingredientsList.innerHTML = "";
+    recipe.ingredients.forEach(ingredient => 
+    {
+        var li = document.createElement("li");
+        li.innerHTML = ingredient;
+        ingredientsList.appendChild(li);
+    });
+
+    var instructionsList = document.getElementById("instructionsList");
+    instructionsList.innerHTML = "";
+    recipe.instructions.forEach(instruction => 
+    {
+        var li = document.createElement("li");
+        li.innerHTML = instruction;
+        instructionsList.appendChild(li);
+    });
 }
