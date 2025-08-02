@@ -85,6 +85,86 @@
                 "Let it cool slightly before eating."
             ],
             "image": "images/image_unavailable.png"
+        },
+        {
+            "name": "Garlic Butter Shrimp Pasta",
+            "id": "shrimp-pasta-004",
+            "description": "Juicy shrimp tossed in garlic butter and served over spaghetti for a quick yet elegant dinner.",
+            "category": "Dinner",
+            "difficulty": "Intermediate",
+            "cuisine": "Mediterranean",
+            "dietary": "Dairy-Free",
+            "servings": 4,
+            "time": "25 minutes",
+            "ingredients": [
+                "400g spaghetti",
+                "400g raw shrimp, peeled and deveined",
+                "4 tbsp olive oil",
+                "4 garlic cloves, minced",
+                "1/2 tsp chili flakes",
+                "1 lemon (juice and zest)",
+                "Salt and pepper to taste",
+                "Fresh parsley, chopped"
+            ],
+            "instructions": [
+                "Cook spaghetti according to package instructions. Drain and set aside.",
+                "In a large skillet, heat olive oil over medium heat and sauté garlic and chili flakes for 1 minute.",
+                "Add shrimp and cook for 2–3 minutes per side until pink and opaque.",
+                "Add cooked pasta, lemon juice, zest, and toss to combine.",
+                "Season with salt and pepper and garnish with parsley before serving."
+            ],
+            "image": "images/image_unavailable.png"
+        },
+        {
+            "name": "Mango Lassi",
+            "id": "mango-lassi-005",
+            "description": "A creamy, sweet Indian yogurt drink with fresh mango and a hint of cardamom.",
+            "category": "Beverages",
+            "difficulty": "Beginner",
+            "cuisine": "Indian",
+            "dietary": "Gluten-Free",
+            "servings": 2,
+            "time": "10 minutes",
+            "ingredients": [
+                "1 cup ripe mango chunks",
+                "1 cup plain yogurt",
+                "1/2 cup milk",
+                "2 tbsp sugar or honey",
+                "1/4 tsp ground cardamom",
+                "Ice cubes (optional)"
+            ],
+            "instructions": [
+                "Combine mango, yogurt, milk, sugar, and cardamom in a blender.",
+                "Blend until smooth and frothy.",
+                "Serve chilled over ice if desired."
+            ],
+            "image": "images/image_unavailable.png"
+        },
+        {
+            "name": "Baked Sweet Potato Fries",
+            "id": "sweetpotato-fries-006",
+            "description": "Crispy oven-baked sweet potato fries seasoned to perfection—healthy and delicious!",
+            "category": "Snacks",
+            "difficulty": "Quick & Easy",
+            "cuisine": "American",
+            "dietary": "Vegan",
+            "servings": 3,
+            "time": "35 minutes",
+            "ingredients": [
+                "2 large sweet potatoes, peeled and cut into fries",
+                "2 tbsp olive oil",
+                "1/2 tsp paprika",
+                "1/2 tsp garlic powder",
+                "Salt and pepper to taste"
+            ],
+            "instructions": [
+                "Preheat oven to 220°C (425°F) and line a baking tray with parchment paper.",
+                "Toss sweet potato fries in olive oil, paprika, garlic powder, salt, and pepper.",
+                "Spread out on the tray in a single layer.",
+                "Bake for 25–30 minutes, flipping halfway through, until golden and crispy.",
+                "Serve hot with your favorite dip."
+            ],
+            "image": "images/image_unavailable.png"
         }
     ],
     "taglines": [
