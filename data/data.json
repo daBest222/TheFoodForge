@@ -1,39 +1,127 @@
 {
-    "recipes":
-    [
+    "recipes": [
         {
-            "name": "Chocolate chip cookies",
-            "id": "1",
-            "description": "These classic chocolate chip cookies are soft, chewy, and loaded with rich chocolate chips. Perfect for any occasion, they’re easy to make and guaranteed to satisfy your sweet tooth!",
+            "name": "Classic French Toast",
+            "id": "french-toast-001",
+            "description": "Golden brown French toast with a hint of cinnamon, perfect for a cozy breakfast.",
+            "category": "Breakfast",
+            "difficulty": "Beginner",
+            "cuisine": "American",
+            "dietary": "Vegetarian",
+            "servings": 2,
+            "time": "15 minutes",
+            "ingredients": [
+                "4 slices of bread",
+                "2 eggs",
+                "1/2 cup milk",
+                "1 tsp vanilla extract",
+                "1/2 tsp cinnamon",
+                "1 tbsp butter",
+                "Maple syrup for serving"
+            ],
+            "instructions": [
+                "In a bowl, whisk together eggs, milk, vanilla, and cinnamon.",
+                "Dip bread slices into the mixture, coating both sides evenly.",
+                "Heat butter in a skillet over medium heat.",
+                "Cook each slice for 2–3 minutes on each side until golden brown.",
+                "Serve warm with maple syrup."
+            ],
+            "image": "images/image_unavailable.png"
+        },
+        {
+            "name": "Vegetarian Tacos",
+            "id": "veg-tacos-002",
+            "description": "Flavorful vegetarian tacos loaded with beans, veggies, and fresh toppings.",
+            "category": "Lunch",
+            "difficulty": "Quick & Easy",
+            "cuisine": "Mexican",
+            "dietary": "Vegan",
+            "servings": 4,
+            "time": "20 minutes",
+            "ingredients": [
+                "8 small corn tortillas",
+                "1 can black beans, drained",
+                "1 cup corn kernels",
+                "1 bell pepper, diced",
+                "1/2 red onion, chopped",
+                "1 avocado, sliced",
+                "Fresh coriander (cilantro)",
+                "Lime wedges",
+                "Salt and pepper to taste"
+            ],
+            "instructions": [
+                "Heat a skillet over medium heat and sauté bell pepper and onion for 3–4 minutes.",
+                "Add black beans and corn, season with salt and pepper, and heat through.",
+                "Warm the tortillas in a separate pan or microwave.",
+                "Spoon the veggie mixture onto each tortilla.",
+                "Top with avocado slices, coriander, and a squeeze of lime."
+            ],
+            "image": "images/image_unavailable.png"
+        },
+        {
+            "name": "Chocolate Mug Cake",
+            "id": "mug-cake-003",
+            "description": "A quick single-serving chocolate cake made in the microwave—perfect for dessert cravings.",
             "category": "Dessert",
-            "time": "30 minutes",
-            "ingredients":
-            [
-                "1 egg",
-                "1 1/4 cups of flour",
-                "1 1/2 cups of brown sugar",
-                "125g of butter",
-                "250g of chocolate chips"
+            "difficulty": "Quick & Easy",
+            "cuisine": "American",
+            "dietary": "Vegetarian",
+            "servings": 1,
+            "time": "5 minutes",
+            "ingredients": [
+                "4 tbsp all-purpose flour",
+                "4 tbsp sugar",
+                "2 tbsp cocoa powder",
+                "1/4 tsp baking powder",
+                "3 tbsp milk",
+                "2 tbsp vegetable oil",
+                "1/4 tsp vanilla extract",
+                "Pinch of salt"
             ],
-            "instructions":
-            [
-                "Preheat the oven to 180°C.",
-                "In a bowl, mix the butter and sugar until creamy.",
-                "Add the egg and mix well.",
-                "Gradually add the flour and chocolate chips.",
-                "Form small balls and place them on a baking tray.",
-                "Gently flatten each ball with a fork (barely).",
-                "Bake for 10-15 minutes or until golden brown.",
-                "Let them cool before serving."
+            "instructions": [
+                "In a microwave-safe mug, mix all dry ingredients.",
+                "Add milk, oil, and vanilla extract and stir until smooth.",
+                "Microwave on high for 1 minute to 1 minute 20 seconds.",
+                "Let it cool slightly before eating."
             ],
-            "image": "images/Test.png"
+            "image": "images/image_unavailable.png"
         }
     ],
-    "taglines":
-    [
+    "taglines": [
         "Crafted with Heat. Served with Heart.",
         "Where flavor gets forged.",
-        "Smash. Stir. Serve.",
         "Forging food one recipe at a time."
+    ],
+    "categories": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Dessert",
+        "Snacks",
+        "Beverages"
+    ],
+    "difficulties": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Quick & Easy"
+    ],
+    "cuisines": [
+        "Italian",
+        "Mexican",
+        "Indian",
+        "Asian",
+        "Mediterranean",
+        "American",
+        "Middle Eastern",
+        "French"
+    ],
+    "dietary": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Keto",
+        "Paleo",
+        "Dairy-Free"
     ]
 }

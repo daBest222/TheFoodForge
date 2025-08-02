@@ -14,6 +14,10 @@ function displayRecipe(recipe)
     document.getElementById("recipeImage").src = recipe.image;
     document.getElementById("recipeTime").innerHTML += recipe.time;
     document.getElementById("recipeCategory").innerHTML += recipe.category;
+    document.getElementById("recipeServings").innerHTML += recipe.servings;
+    document.getElementById("recipeDifficulty").innerHTML += recipe.difficulty;
+    document.getElementById("recipeCuisine").innerHTML += recipe.cuisine;
+    document.getElementById("recipeDietary").innerHTML += recipe.dietary;
 
     var favouriteButton = document.getElementsByClassName("favouriteButton")[0];
     favouriteButton.id = recipe.id;

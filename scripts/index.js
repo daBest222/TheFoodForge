@@ -14,6 +14,10 @@ function displayRecipes(recipes)
         recipeBox.getElementsByClassName("recipeDescription")[0].innerHTML = recipe.description;
         recipeBox.getElementsByClassName("recipeTime")[0].innerHTML += recipe.time
         recipeBox.getElementsByClassName("recipeCategory")[0].innerHTML += recipe.category;
+        recipeBox.getElementsByClassName("recipeServings")[0].innerHTML += recipe.servings;
+        recipeBox.getElementsByClassName("recipeDifficulty")[0].innerHTML += recipe.difficulty;
+        recipeBox.getElementsByClassName("recipeCuisine")[0].innerHTML += recipe.cuisine;
+        recipeBox.getElementsByClassName("recipeDietary")[0].innerHTML += recipe.dietary;
 
         var favouriteButton = recipeBox.getElementsByClassName("favouriteButton")[0];
         favouriteButton.id = recipe.id;
