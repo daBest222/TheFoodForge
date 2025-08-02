@@ -1,13 +1,13 @@
 .recipeImageBox
 {
     width: 100%;
-    align-content: center;
+    align-items: center;
 }
 
 .recipeImage
 {
     max-width: 100%;
-    max-height: 75px;
+    max-height: 150px;
     border-radius: 5px;
 }
 
