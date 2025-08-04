@@ -16,6 +16,7 @@
     border: 2px solid #457bd1;
     border-radius: 5px;
     width: 30px;
+    cursor: pointer;
 }
 
 #helpButton
