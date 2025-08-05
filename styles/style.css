@@ -31,8 +31,6 @@ main
     width: 50%;
     margin-left: 25%;
     align-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 @media (max-width: 600px) 
@@ -108,4 +106,6 @@ button:hover
     padding: 10px;
     color: #457bd1;
     text-shadow: 1px 1px #b1b8c2;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
